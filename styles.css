@@ -1,1 +1,61 @@
 /*  your css code here. If applicable */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  flex: 1;
+  margin: 10px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  transition: flex 0.6s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+/* Images */
+#panel-1 {
+  background-image: url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?auto=format&fit=crop&w=1350&q=80");
+}
+
+#panel-2 {
+  background-image: url("https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?auto=format&fit=crop&w=1350&q=80");
+}
+
+#panel-3 {
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1353&q=80");
+}
+
+#panel-4 {
+  background-image: url("https://images.unsplash.com/photo-1551009175-8a68da93d5f9?auto=format&fit=crop&w=1351&q=80");
+}
+
+#panel-5 {
+  background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=1350&q=80");
+}
